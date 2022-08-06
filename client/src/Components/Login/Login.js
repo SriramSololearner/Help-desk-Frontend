@@ -1,9 +1,9 @@
 import React from 'react';
 import {Container,Row,Col,Form, Button} from 'react-bootstrap';
 export const LoginForm = ({ changeHandler, email, pass, submitHandler, formSwitcher }) => {
-    return (
+    return ( 
         <div>
-            <Container>
+            <Container class>
                 <Row>
                     <Col>
                     <h1 style={{"color":"blueviolet", "fontSize" : "25px"}}>Client Login!</h1>
