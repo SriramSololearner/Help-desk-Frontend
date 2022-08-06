@@ -40,3 +40,7 @@ footer{
     padding:1rem;
     color: blue;
 }
+
+Table{
+    border:2px solid;
+}
