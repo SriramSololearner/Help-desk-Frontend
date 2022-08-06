@@ -1,11 +1,17 @@
 import React from 'react'
 import { Container,Row,Col,Button} from 'react-bootstrap'
-import TicketTable from '../../../Components/Ticket-Table/TicketTable'
-import tickets from '../../../assets/data/dummy-tickets.json';
+import TicketTable from '../../Components/Ticket-Table/TicketTable'
+import tickets from '../../assets/data/dummy-tickets.json'
+import BreadcrumbComp from '../../Components/breadcrumb/breadcrumbComp';
 
 const Dashboard = () => {
     return (
         <Container>
+            <Row>
+                <Col>
+                    <BreadcrumbComp page = "Dashboard" />
+                </Col>
+            </Row>
             <Row>
                 <Col className='text-center' mt-5 mb-2>
                     <Button variant="outline-success" style={{"fontSize":"20px", "padding":"10px 30px", "overflow":"hidden"}}>Add New Ticket</Button>
