@@ -9,7 +9,7 @@ const initialFrmData = {
     IssueDate:"",
     Details: ""
 
-};
+}; 
 export const AddTicket = () => {
 
     const[frmData, setFrmdata] = useState(initialFrmData);

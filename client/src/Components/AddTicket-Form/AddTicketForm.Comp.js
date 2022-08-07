@@ -18,7 +18,7 @@ export const AddTicketForm = ({ submitHandler,changeHandler,frmData }) => {
                     <Col sm={9}>
                         <Form.Control  name="Subject" value={frmData.Subject} placeholder="Subject" minLength="5" maxLength="100" onChange={changeHandler} required/>
                     </Col>
-                </Form.Group>
+                </Form.Group> 
 
                 <Form.Group className="mb-3" as={Row}>
                     <Form.Label column sm={3} >IssueDate</Form.Label>
