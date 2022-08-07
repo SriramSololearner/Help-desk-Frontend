@@ -3,7 +3,21 @@
         "id":1,
         "subject":"Issue with ssl certificate",
         "status":"client response pending",
-        "addedAt":"2020-05-15"
+        "addedAt":"2020-05-15",
+        "history":[
+            {
+                "date"     : "20-03-2020",
+                "message"  : "When activating an asynchronous action from a button it is a good UX pattern to give the user feedback as to the loading state, this can easily be done",
+                "messageBy": "Client"
+            },
+
+            {
+                "date"     : "12-05-2022",
+                "message"  : "At HackerEarth, we regularly host different types of coding contests where you can compete against other developers and improve your coding skills.",
+                "messageBy": "Operator"
+            }
+
+        ]
     },
 
     {

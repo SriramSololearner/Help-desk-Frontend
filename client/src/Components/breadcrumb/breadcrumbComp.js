@@ -1,6 +1,6 @@
 import Breadcrumb from "react-bootstrap/Breadcrumb";
 
-function BreadcrumbComp ({page}) {
+function BreadcrumbComp ({page}) { 
     return (
         <Breadcrumb> 
             <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
