@@ -1,12 +1,12 @@
 import React from 'react';
 import {Container,Row,Col,Form, Button} from 'react-bootstrap';
-export const LoginForm = ({ changeHandler, email, pass, submitHandler, formSwitcher }) => {
+export const AdminLoginForm = ({ changeHandler, email, pass, submitHandler, formSwitcher }) => {
     return ( 
         <div>
             <Container>
                 <Row>
                     <Col>
-                    <h1 style={{"color":"blueviolet", "fontSize" : "25px"}}>Client Login!</h1>
+                    <h1 style={{"color":"blueviolet", "fontSize" : "25px"}}>Admin Login!</h1>
                     <hr/>
                         <Form autoComplete='off' onSubmit={submitHandler}>
                             <Form.Group className="mb-3" >

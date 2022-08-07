@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+// import { AdminLoginForm } from "../../Components/Login/AdminLogin";
 import { LoginForm } from "../../Components/Login/Login";
 import { ResetPassword } from "../../Components/Password-reset/passwordReset";
 
@@ -42,6 +43,7 @@ export const Entry = () => {
             <div style={{ width: "20%" }} className="container">
                 {frmLoad === "login" && (
                     <LoginForm changeHandler={changeHandler} email={email} pass={password} submitHandler={submitHandler} formSwitcher={formSwitcher} />
+                    
                 )}
 
                 {frmLoad === "reset" && (
