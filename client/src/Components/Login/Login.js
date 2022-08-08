@@ -3,7 +3,7 @@ import {Container,Row,Col,Form, Button} from 'react-bootstrap';
 export const LoginForm = ({ changeHandler, email, pass, submitHandler, formSwitcher }) => {
     return ( 
         <div>
-            <Container>
+            <Container> 
                 <Row>
                     <Col>
                     <h1 style={{"color":"blueviolet", "fontSize" : "25px"}}>Client Login!</h1>

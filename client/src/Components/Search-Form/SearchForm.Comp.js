@@ -3,12 +3,12 @@ import { Col, Form, Row } from 'react-bootstrap';
 import {PropTypes} from 'prop-types';
 export const SearchForm = ({handleOnchange, str}) => {
 
-    return (
+    return ( 
         <div>
             <Form>
                 <Form.Group as={Row}>
                     <Form.Label column sm = '3'></Form.Label>
-                    <Col ms='10'>
+                    <Col ms='5'  >
                         <Form.Control name="Search" placeholder="Search..."  style={{"fontWeight":"bold"}} value={str} onChange={handleOnchange}/>
                     </Col>
                 </Form.Group>

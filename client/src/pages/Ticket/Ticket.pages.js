@@ -4,11 +4,22 @@ import BreadcrumbComp from '../../Components/breadcrumb/breadcrumbComp'
 import tickets from '../../assets/data/dummy-tickets.json';
 import { MessageHistory } from '../../Components/Message-history/MessageHistory.comp';
 import { UpdateTicket } from '../../Components/Update-Ticket/UpdateTicket.Comp';
+import {useParams} from 'react-router-dom';
 
-const ticket = tickets[0];
+// const ticket = tickets[0];
+
 export const Ticket= () => {
+    const {tId} = useParams();
     const[message, setMessage] = useState('');
-    useEffect(() => {}, [message])
+    const [ticket, setTicket] = useState("");
+
+    useEffect(() => { for (let i = 0; i < tickets.length; i++) {
+        if (tickets[i].id == tId) {
+        setTicket(tickets[i]);
+        continue;
+    }       
+    }
+    }, [message, tId])
 
     const changeHandler = e => {
         setMessage(e.target.value);
@@ -28,9 +39,11 @@ export const Ticket= () => {
 
             <Row>
                 <Col className= ' mt-3 text-weight-bold text-secondary'>
+
                     <div className='subject'>Subject: {ticket.subject} </div>
                     <div className='date'>Ticket Opened: {ticket.addedAt} </div>
                     <div className='status'>status: {ticket.status} </div>
+
                 </Col>
 
                 <Col className='text-end'>
@@ -40,7 +53,7 @@ export const Ticket= () => {
 
             <Row className='mt5'>
                 <Col>
-                    <MessageHistory msg={ticket.history} />
+                { ticket.history && <MessageHistory msg={ticket.history} /> }
                 </Col>
             </Row>
 

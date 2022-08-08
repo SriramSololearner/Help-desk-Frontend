@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 // import { AdminLoginForm } from "../../Components/Login/AdminLogin";
 import { LoginForm } from "../../Components/Login/Login";
-import { ResetPassword } from "../../Components/Password-reset/passwordReset";
+import { ResetPassword } from "../../Components/Password-reset/passwordReset.Comp";
 
 import "./Entry.style.css";
 export const Entry = () => {

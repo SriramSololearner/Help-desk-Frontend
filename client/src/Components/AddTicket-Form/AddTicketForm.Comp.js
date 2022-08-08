@@ -5,11 +5,11 @@ import {PropTypes} from 'prop-types';
 
 export const AddTicketForm = ({ submitHandler,changeHandler,frmData }) => {
 
-    console.log(frmData)
+    // console.log(frmData)
 
     return (
 
-        <div className='AddTicket mt-5 bg-light'>
+        <div className='AddTicket mt-5  bg-light'>
             <h1 className='text-center text-info'>Add New Ticket</h1>
             <hr/>
             <Form autoComplete="off"  onSubmit={submitHandler}>
